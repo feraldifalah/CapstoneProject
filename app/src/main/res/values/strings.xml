@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">SPARKLE Beta.1.0</string>
+
+    <string name="heroes_name">Nama</string>
+    <string name="description">Nomor</string>
+    <string name="rute_parkir">Rute Parkir</string>
+    <string name="rute_exit">Rute Exit</string>
+    <string name="scan_barcode">SCAN BARCODE</string>
+    <string name="nomor_parkir">Nomor Parkir</string>
+    <string name="welcome">Welcome</string>
+    <string name="cek_area_parkir">Cek Area Parkir</string>
+    <string name="cek_hari_sibuk">Cek Hari Sibuk</string>
+    <string name="area_parkir">Area Parkir</string>
+    <string name="hari_sibuk">Hari Sibuk</string>
+
+    <string-array name="data_name">
+        <item>Nomor</item>
+        <item>Nomor</item>
+        <item>Nomor</item>
+        <item>Nomor</item>
+        <item>Nomor</item>
+        <item>Nomor</item>
+        <item>Nomor</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/nomor_1</item>
+        <item>@drawable/nomor_2</item>
+        <item>@drawable/nomor_3</item>
+        <item>@drawable/nomor_4</item>
+        <item>@drawable/nomor_5</item>
+        <item>@drawable/nomor_6</item>
+        <item>@drawable/exit_7</item>
+    </integer-array>
+
+    <integer-array name="data_exit">
+        <item>@drawable/exit_1</item>
+        <item>@drawable/exit_2</item>
+        <item>@drawable/exit_3</item>
+        <item>@drawable/exit_4</item>
+        <item>@drawable/exit_5</item>
+        <item>@drawable/exit_6</item>
+        <item>@drawable/exit_7</item>
+    </integer-array>
+</resources>
