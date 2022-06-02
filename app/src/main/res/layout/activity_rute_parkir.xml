@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Ivory"
     tools:context=".RuteParkirActivity">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -26,7 +27,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="108dp"
-        android:backgroundTint="@color/navi"
+        android:backgroundTint="@color/teal_900"
+        android:textColor="@color/light_brown"
         android:text="@string/rute_exit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

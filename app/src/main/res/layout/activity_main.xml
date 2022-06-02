@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/Ivory"
     android:layout_height="match_parent">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -24,7 +25,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/navi"
+        android:backgroundTint="@color/teal_900"
+        android:textColor="@color/light_brown"
         android:text="Rute Tempat Parkir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -38,7 +40,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/navi"
+        android:backgroundTint="@color/teal_900"
+        android:textColor="@color/light_brown"
         android:text="Rute Lansung Keluar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +54,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/navi"
+        android:backgroundTint="@color/teal_900"
+        android:textColor="@color/light_brown"
         android:text="Rute Keluar Tempat Parkir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

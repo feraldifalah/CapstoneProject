@@ -13,7 +13,7 @@ class WelcomeActivity : AppCompatActivity() {
         binding = ActivityWelcomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportActionBar?.title = resources.getString(R.string.welcome)
+        supportActionBar?.hide()
 
         binding.barcodeButton.setOnClickListener {
             val intent = Intent(applicationContext, ClosedInMainActivity::class.java)

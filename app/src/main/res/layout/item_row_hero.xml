@@ -15,7 +15,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:background="@color/navi"
+        android:background="@color/teal_900"
         android:padding="8dp">
 
         <TextView
@@ -26,7 +26,7 @@
             android:layout_marginTop="45dp"
             android:layout_marginEnd="8dp"
             android:gravity="center"
-            android:textColor="@color/white"
+            android:textColor="@color/light_brown"
             android:textSize="64sp"
             android:textStyle="bold"
             card_view:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
-            android:textColor="@color/white"
+            android:textColor="@color/light_brown"
             android:gravity="center"
             android:textSize="64sp"
             android:textStyle="bold"
