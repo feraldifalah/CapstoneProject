@@ -1,355 +1,407 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context=".HariSibukActivity">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/Monday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="52dp"
+        android:text="Senin"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView60"
-            android:layout_width="91dp"
-            android:layout_height="wrap_content"
-            android:text="Hari Sibuk"
-            android:textColor="@android:color/black"
-            android:textSize="30sp" />
-    </TableRow>
+    <TextView
+        android:id="@+id/Thursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:text="Kamis"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMonday" />
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/Tuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Selasa"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/Wednesday"
+        app:layout_constraintStart_toEndOf="@+id/Monday"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView59"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="Hari/Minggu"
-            android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/Friday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Jumat"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/Saturday"
+        app:layout_constraintStart_toEndOf="@+id/Thursday"
+        app:layout_constraintTop_toBottomOf="@+id/tvTuesday" />
 
-        <TextView
-            android:id="@+id/textView58"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="1"
-            android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/Sunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Minggu"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFriday" />
 
-        <TextView
-            android:id="@+id/textView57"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="2"
-            android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/Wednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="60dp"
+        android:text="Rabu"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView55"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="3"
-            android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/Saturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="60dp"
+        android:text="Sabtu"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWednesday" />
 
-        <TextView
-            android:id="@+id/textView56"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="4"
-            android:textColor="@android:color/black" />
-    </TableRow>
+    <TextView
+        android:id="@+id/tvMonday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/Monday"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Monday"
+        app:layout_constraintTop_toBottomOf="@+id/Monday" />
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/tvTuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/Tuesday"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Tuesday"
+        app:layout_constraintTop_toBottomOf="@+id/Tuesday" />
 
-        <TextView
-            android:id="@+id/textView48"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="Senin"
-            android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/tvWednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/Wednesday"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Wednesday"
+        app:layout_constraintTop_toBottomOf="@+id/Wednesday" />
 
-        <TextView
-            android:id="@+id/textView39"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
+    <TextView
+        android:id="@+id/tvThursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/Thursday"
+        app:layout_constraintStart_toStartOf="@+id/Thursday"
+        app:layout_constraintTop_toBottomOf="@+id/Thursday" />
 
-        <TextView
-            android:id="@+id/textView38"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
+    <TextView
+        android:id="@+id/tvFriday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/Friday"
+        app:layout_constraintStart_toStartOf="@+id/Friday"
+        app:layout_constraintTop_toBottomOf="@+id/Friday" />
 
-        <TextView
-            android:id="@+id/textView37"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
+    <TextView
+        android:id="@+id/tvSaturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/Saturday"
+        app:layout_constraintStart_toStartOf="@+id/Saturday"
+        app:layout_constraintTop_toBottomOf="@+id/Saturday" />
 
-        <TextView
-            android:id="@+id/textView36"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-    </TableRow>
+    <TextView
+        android:id="@+id/tvSunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/Sunday"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Sunday"
+        app:layout_constraintTop_toBottomOf="@+id/Sunday" />
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="365dp" />
 
-        <TextView
-            android:id="@+id/textView49"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="Selasa"
-            android:textColor="@android:color/black"/>
+    <ImageView
+        android:id="@+id/green"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/green"
+        app:layout_constraintBottom_toTopOf="@+id/yellow"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/textView43"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
+    <ImageView
+        android:id="@+id/yellow"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/yellow"
+        app:layout_constraintBottom_toTopOf="@+id/red"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/textView42"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
+    <ImageView
+        android:id="@+id/red"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/textView41"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
+    <ImageView
+        android:id="@+id/green1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/Monday"
+        app:layout_constraintStart_toStartOf="@+id/Monday"
+        app:layout_constraintTop_toBottomOf="@+id/Monday" />
+    <ImageView
+        android:id="@+id/yellow1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/Monday"
+        app:layout_constraintStart_toStartOf="@+id/Monday"
+        app:layout_constraintTop_toBottomOf="@+id/Monday" />
+    <ImageView
+        android:id="@+id/red1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/red"
+        app:layout_constraintEnd_toEndOf="@+id/Monday"
+        app:layout_constraintStart_toStartOf="@+id/Monday"
+        app:layout_constraintTop_toBottomOf="@+id/Monday" />
 
-        <TextView
-            android:id="@+id/textView40"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-    </TableRow>
+    <ImageView
+        android:id="@+id/green2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/Tuesday"
+        app:layout_constraintStart_toStartOf="@+id/Tuesday"
+        app:layout_constraintTop_toBottomOf="@+id/Tuesday" />
+    <ImageView
+        android:id="@+id/yellow2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/Tuesday"
+        app:layout_constraintStart_toStartOf="@+id/Tuesday"
+        app:layout_constraintTop_toBottomOf="@+id/Tuesday" />
+    <ImageView
+        android:id="@+id/red2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/red"
+        app:layout_constraintEnd_toEndOf="@+id/Tuesday"
+        app:layout_constraintStart_toStartOf="@+id/Tuesday"
+        app:layout_constraintTop_toBottomOf="@+id/Tuesday" />
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+    <ImageView
+        android:id="@+id/green3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/Wednesday"
+        app:layout_constraintStart_toStartOf="@+id/Wednesday"
+        app:layout_constraintTop_toBottomOf="@+id/Wednesday" />
+    <ImageView
+        android:id="@+id/yellow3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/Wednesday"
+        app:layout_constraintStart_toStartOf="@+id/Wednesday"
+        app:layout_constraintTop_toBottomOf="@+id/Wednesday" />
+    <ImageView
+        android:id="@+id/red3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/red"
+        app:layout_constraintEnd_toEndOf="@+id/Wednesday"
+        app:layout_constraintStart_toStartOf="@+id/Wednesday"
+        app:layout_constraintTop_toBottomOf="@+id/Wednesday" />
 
-        <TextView
-            android:id="@+id/textView50"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="Rabu
-"
-            android:textColor="@android:color/black"/>
+    <ImageView
+        android:id="@+id/green4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/Thursday"
+        app:layout_constraintStart_toStartOf="@+id/Thursday"
+        app:layout_constraintTop_toBottomOf="@+id/Thursday" />
+    <ImageView
+        android:id="@+id/yellow4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/Thursday"
+        app:layout_constraintStart_toStartOf="@+id/Thursday"
+        app:layout_constraintTop_toBottomOf="@+id/Thursday" />
+    <ImageView
+        android:id="@+id/red4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/red"
+        app:layout_constraintEnd_toEndOf="@+id/Thursday"
+        app:layout_constraintStart_toStartOf="@+id/Thursday"
+        app:layout_constraintTop_toBottomOf="@+id/Thursday" />
 
-        <TextView
-            android:id="@+id/textView47"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
+    <ImageView
+        android:id="@+id/green5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/Friday"
+        app:layout_constraintStart_toStartOf="@+id/Friday"
+        app:layout_constraintTop_toBottomOf="@+id/Friday" />
+    <ImageView
+        android:id="@+id/yellow5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/Friday"
+        app:layout_constraintStart_toStartOf="@+id/Friday"
+        app:layout_constraintTop_toBottomOf="@+id/Friday" />
+    <ImageView
+        android:id="@+id/red5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/red"
+        app:layout_constraintEnd_toEndOf="@+id/Friday"
+        app:layout_constraintStart_toStartOf="@+id/Friday"
+        app:layout_constraintTop_toBottomOf="@+id/Friday" />
 
-        <TextView
-            android:id="@+id/textView46"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
+    <ImageView
+        android:id="@+id/green6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/Saturday"
+        app:layout_constraintStart_toStartOf="@+id/Saturday"
+        app:layout_constraintTop_toBottomOf="@+id/Saturday" />
+    <ImageView
+        android:id="@+id/yellow6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/Saturday"
+        app:layout_constraintStart_toStartOf="@+id/Saturday"
+        app:layout_constraintTop_toBottomOf="@+id/Saturday" />
+    <ImageView
+        android:id="@+id/red6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/red"
+        app:layout_constraintEnd_toEndOf="@+id/Saturday"
+        app:layout_constraintStart_toStartOf="@+id/Saturday"
+        app:layout_constraintTop_toBottomOf="@+id/Saturday" />
 
-        <TextView
-            android:id="@+id/textView45"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
+    <ImageView
+        android:id="@+id/green7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/green"
+        app:layout_constraintEnd_toEndOf="@+id/Sunday"
+        app:layout_constraintStart_toStartOf="@+id/Sunday"
+        app:layout_constraintTop_toBottomOf="@+id/Sunday" />
+    <ImageView
+        android:id="@+id/yellow7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@+id/Sunday"
+        app:layout_constraintStart_toStartOf="@+id/Sunday"
+        app:layout_constraintTop_toBottomOf="@+id/Sunday" />
+    <ImageView
+        android:id="@+id/red7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@color/red"
+        app:layout_constraintEnd_toEndOf="@+id/Sunday"
+        app:layout_constraintStart_toStartOf="@+id/Sunday"
+        app:layout_constraintTop_toBottomOf="@+id/Sunday" />
 
-        <TextView
-            android:id="@+id/textView44"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-    </TableRow>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Sepi"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/green" />
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Lumayan Ramai"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/yellow" />
 
-        <TextView
-            android:id="@+id/textView51"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="Kamis"
-            android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Sangat Ramai"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/red" />
 
-        <TextView
-            android:id="@+id/textView32"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView31"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView30"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView29"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/textView52"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="Jumat
-"
-            android:textColor="@android:color/black"/>
-
-        <TextView
-            android:id="@+id/textView33"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/textView53"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="Sabtu"
-            android:textColor="@android:color/black"/>
-
-        <TextView
-            android:id="@+id/textView34"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/textView54"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="Minggu"
-            android:textColor="@android:color/black"/>
-
-        <TextView
-            android:id="@+id/textView35"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10sp"
-            android:text="TextView" />
-    </TableRow>
-</TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
