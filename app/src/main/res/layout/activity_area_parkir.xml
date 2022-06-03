@@ -11,7 +11,7 @@
         android:id="@+id/imageMap"
         android:layout_width="match_parent"
         android:layout_height="600dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/nomor_penuh"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -22,32 +22,32 @@
         android:id="@+id/mobil_one"
         android:layout_width="75dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="196dp"
+        android:layout_marginBottom="52dp"
         android:background="@drawable/penuh"
         app:layout_constraintBottom_toBottomOf="@+id/imageMap"
         app:layout_constraintEnd_toEndOf="@+id/imageMap"
-        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintHorizontal_bias="0.633"
         app:layout_constraintStart_toStartOf="@+id/imageMap" />
 
     <ImageView
         android:id="@+id/mobil_two"
         android:layout_width="75dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="296dp"
+        android:layout_marginBottom="52dp"
         android:background="@drawable/penuh"
         app:layout_constraintBottom_toBottomOf="@+id/imageMap"
         app:layout_constraintEnd_toEndOf="@+id/imageMap"
-        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintHorizontal_bias="0.952"
         app:layout_constraintStart_toStartOf="@+id/imageMap" />
 
     <ImageView
         android:id="@+id/mobil_three"
         android:layout_width="75dp"
         android:layout_height="50dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="376dp"
         android:background="@drawable/penuh"
         app:layout_constraintEnd_toEndOf="@+id/imageMap"
-        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintHorizontal_bias="0.633"
         app:layout_constraintStart_toStartOf="@+id/imageMap"
         app:layout_constraintTop_toTopOf="@+id/imageMap" />
 
@@ -55,10 +55,10 @@
         android:id="@+id/mobil_four"
         android:layout_width="75dp"
         android:layout_height="50dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="248dp"
         android:background="@drawable/penuh"
         app:layout_constraintEnd_toEndOf="@+id/imageMap"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.952"
         app:layout_constraintStart_toStartOf="@+id/imageMap"
         app:layout_constraintTop_toTopOf="@+id/imageMap" />
 
@@ -66,10 +66,10 @@
         android:id="@+id/mobil_five"
         android:layout_width="75dp"
         android:layout_height="50dp"
-        android:layout_marginTop="252dp"
+        android:layout_marginTop="376dp"
         android:background="@drawable/penuh"
         app:layout_constraintEnd_toEndOf="@+id/imageMap"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.952"
         app:layout_constraintStart_toStartOf="@+id/imageMap"
         app:layout_constraintTop_toTopOf="@+id/imageMap" />
 
@@ -77,11 +77,99 @@
         android:id="@+id/mobil_six"
         android:layout_width="75dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="196dp"
+        android:layout_marginBottom="300dp"
         android:background="@drawable/penuh"
         app:layout_constraintBottom_toBottomOf="@+id/imageMap"
         app:layout_constraintEnd_toEndOf="@+id/imageMap"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toStartOf="@+id/imageMap" />
+
+    <ImageView
+        android:id="@+id/mobil_seven"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="428dp"
+        android:background="@drawable/penuh"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMap"
+        app:layout_constraintEnd_toEndOf="@+id/imageMap"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="@+id/imageMap" />
+
+    <ImageView
+        android:id="@+id/mobil_eight"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="428dp"
+        android:background="@drawable/penuh"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMap"
+        app:layout_constraintEnd_toEndOf="@+id/imageMap"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageMap" />
+
+    <ImageView
+        android:id="@+id/mobil_nine"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/penuh"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMap"
+        app:layout_constraintEnd_toEndOf="@+id/imageMap"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageMap" />
+
+    <ImageView
+        android:id="@+id/mobil_ten"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/penuh"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMap"
+        app:layout_constraintEnd_toEndOf="@+id/imageMap"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="@+id/imageMap" />
+
+    <ImageView
+        android:id="@+id/mobil_eleven"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="172dp"
+        android:background="@drawable/penuh"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMap"
+        app:layout_constraintEnd_toEndOf="@+id/imageMap"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageMap" />
+
+    <ImageView
+        android:id="@+id/mobil_twelve"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="172dp"
+        android:background="@drawable/penuh"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMap"
+        app:layout_constraintEnd_toEndOf="@+id/imageMap"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="@+id/imageMap" />
+
+    <ImageView
+        android:id="@+id/mobil_thirteen"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/penuh"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMap"
+        app:layout_constraintEnd_toEndOf="@+id/imageMap"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageMap" />
+
+    <ImageView
+        android:id="@+id/mobil_fourteen"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/penuh"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMap"
+        app:layout_constraintEnd_toEndOf="@+id/imageMap"
+        app:layout_constraintHorizontal_bias="0.354"
         app:layout_constraintStart_toStartOf="@+id/imageMap" />
 
     <ProgressBar
@@ -93,5 +181,6 @@
         app:layout_constraintEnd_toEndOf="@+id/imageMap"
         app:layout_constraintStart_toStartOf="@+id/imageMap"
         app:layout_constraintTop_toTopOf="@+id/imageMap" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
