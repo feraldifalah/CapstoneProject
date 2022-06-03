@@ -71,6 +71,35 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612441472514:android:5cf33f2c851f4dc96e311b",
+        "android_client_info": {
+          "package_name": "com.dimas.sparkle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612441472514-be38q51p55v1apudou2kiohn3vftssgo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGLcb_eszATU3OIOWNZzF0uYrdmIFK4AY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612441472514-be38q51p55v1apudou2kiohn3vftssgo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"
