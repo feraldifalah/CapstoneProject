@@ -1,17 +1,14 @@
 <resources>
-    <string name="app_name">SPARKLE Beta.1.0</string>
-
-    <string name="heroes_name">Nama</string>
-    <string name="description">Nomor</string>
-    <string name="rute_parkir">Rute Parkir</string>
+    <string name="app_name">SPARKLE</string>
     <string name="rute_exit">Rute Exit</string>
-    <string name="scan_barcode">SCAN BARCODE</string>
-    <string name="nomor_parkir">Nomor Parkir</string>
-    <string name="welcome">Welcome</string>
-    <string name="cek_area_parkir">Cek Area Parkir</string>
+    <string name="lihat_area_parkir">Lihat Area Parkir</string>
     <string name="cek_hari_sibuk">Cek Hari Sibuk</string>
+    <string name="tempat_parkir">Tempat Parkir</string>
+    <string name="description">Description</string>
     <string name="area_parkir">Area Parkir</string>
-    <string name="hari_sibuk">Hari Sibuk</string>
+    <string name="hari_sibuk">Hari Sibuk Minggu ini</string>
+    <string name="nomor_parkir">Nomor Parkir</string>
+    <string name="rute_parkir">Rute Parkir</string>
 
     <string-array name="data_name">
         <item>Nomor</item>
@@ -23,7 +20,7 @@
         <item>Nomor</item>
     </string-array>
 
-    <string-array name="data_description">
+    <string-array name="data_rutes">
         <item>1</item>
         <item>2</item>
         <item>3</item>
