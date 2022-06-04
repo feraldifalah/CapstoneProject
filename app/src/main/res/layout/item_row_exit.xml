@@ -8,6 +8,7 @@
     android:layout_gravity="center"
     android:layout_marginLeft="8dp"
     android:layout_marginTop="4dp"
+    android:background="@color/Ivory"
     android:layout_marginRight="8dp"
     android:layout_marginBottom="4dp"
     card_view:cardCornerRadius="4dp">
@@ -15,6 +16,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="400dp"
+        android:background="@color/Ivory"
         android:padding="8dp">
 
         <ImageView

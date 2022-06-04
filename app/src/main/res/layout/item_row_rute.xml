@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:background="@color/Ivory"
     android:layout_marginLeft="8dp"
     android:layout_marginTop="4dp"
     android:layout_marginRight="8dp"
@@ -14,13 +15,13 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:padding="8dp">
+        android:background="@color/Ivory"
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/img_item_photo"
-            android:layout_width="400dp"
-            android:layout_height="400dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             card_view:layout_constraintBottom_toBottomOf="parent"

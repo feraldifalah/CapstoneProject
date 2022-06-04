@@ -50,6 +50,30 @@ class AreaParkirActivity : AppCompatActivity() {
                             if (rute.tempat == "6")
                                 if (rute.boolean == "true")
                                     binding.mobilSix.visibility = View.GONE
+                            if (rute.tempat == "7")
+                                if (rute.boolean == "true")
+                                    binding.mobilSeven.visibility = View.GONE
+                            if (rute.tempat == "8")
+                                if (rute.boolean == "true")
+                                    binding.mobilEight.visibility = View.GONE
+                            if (rute.tempat == "9")
+                                if (rute.boolean == "true")
+                                    binding.mobilNine.visibility = View.GONE
+                            if (rute.tempat == "10")
+                                if (rute.boolean == "true")
+                                    binding.mobilTen.visibility = View.GONE
+                            if (rute.tempat == "11")
+                                if (rute.boolean == "true")
+                                    binding.mobilEleven.visibility = View.GONE
+                            if (rute.tempat == "12")
+                                if (rute.boolean == "true")
+                                    binding.mobilTwelve.visibility = View.GONE
+                            if (rute.tempat == "13")
+                                if (rute.boolean == "true")
+                                    binding.mobilThirteen.visibility = View.GONE
+                            if (rute.tempat == "14")
+                                if (rute.boolean == "true")
+                                    binding.mobilFourteen.visibility = View.GONE
                         }
                     }
                     showLoading(false)

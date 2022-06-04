@@ -59,10 +59,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, RuteExitActivity::class.java)
             startActivity(intent)
         }
-        binding.exitOutButton.setOnClickListener {
-            val intent = Intent(this, RuteExitOutActivity::class.java)
-            startActivity(intent)
-        }
         setupView()
         setupViewModel()
     }
