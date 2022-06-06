@@ -51,14 +51,14 @@
         <item>@drawable/nomor_4</item>
         <item>@drawable/nomor_5</item>
         <item>@drawable/nomor_6</item>
-        <item>@drawable/exit_7</item>
-        <item>@drawable/nomor_1</item>
-        <item>@drawable/nomor_2</item>
-        <item>@drawable/nomor_3</item>
-        <item>@drawable/nomor_4</item>
-        <item>@drawable/nomor_5</item>
-        <item>@drawable/nomor_6</item>
-        <item>@drawable/exit_7</item>
+        <item>@drawable/nomor_7</item>
+        <item>@drawable/nomor_8</item>
+        <item>@drawable/nomor_9</item>
+        <item>@drawable/nomor_10</item>
+        <item>@drawable/nomor_11</item>
+        <item>@drawable/nomor_12</item>
+        <item>@drawable/nomor_13</item>
+        <item>@drawable/nomor_14</item>
     </integer-array>
 
     <integer-array name="data_exit">
@@ -69,12 +69,12 @@
         <item>@drawable/exit_5</item>
         <item>@drawable/exit_6</item>
         <item>@drawable/exit_7</item>
-        <item>@drawable/exit_1</item>
-        <item>@drawable/exit_2</item>
-        <item>@drawable/exit_3</item>
-        <item>@drawable/exit_4</item>
-        <item>@drawable/exit_5</item>
-        <item>@drawable/exit_6</item>
-        <item>@drawable/exit_7</item>
+        <item>@drawable/exit_8</item>
+        <item>@drawable/exit_9</item>
+        <item>@drawable/exit_10</item>
+        <item>@drawable/exit_11</item>
+        <item>@drawable/exit_12</item>
+        <item>@drawable/exit_13</item>
+        <item>@drawable/exit_14</item>
     </integer-array>
 </resources>

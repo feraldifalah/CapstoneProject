@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.view.WindowInsets
 import android.view.WindowManager
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -22,6 +23,8 @@ import com.dimas.sparkle.ViewModel.ScanBarcodeExitViewModel
 import com.dimas.sparkle.ViewModelFactory
 import com.google.zxing.Result
 import me.dm7.barcodescanner.zxing.ZXingScannerView
+import java.time.LocalDateTime
+import java.time.LocalTime
 
 class ScanBarcodeExitActivity : AppCompatActivity(), ZXingScannerView.ResultHandler {
     private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
@@ -112,11 +115,51 @@ class ScanBarcodeExitActivity : AppCompatActivity(), ZXingScannerView.ResultHand
 
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun handleResult(p0: Result?) {
         if (p0.toString() == "Just Exit Leh okeeeeeeeee"){
             AlertDialog.Builder(this@ScanBarcodeExitActivity).apply {
+                val sharedPreferences = getSharedPreferences("jamPrefs", Context.MODE_PRIVATE)
+                val totalSec = sharedPreferences.getString("JAM_KEY", null)
+
+                var todayNew = LocalTime.now()
+
+                var hoursNew = todayNew.hour
+                var minuteNew = todayNew.minute
+                var secNew = todayNew.second
+
+                val secHoursNew = hoursNew * 3600
+                val secMinuteNew = minuteNew * 60
+
+                val totalSecNew = secHoursNew + secMinuteNew + secNew
+
+                var biayaSec = (totalSecNew - totalSec!!.toInt())/3600
+
+                val date = LocalDateTime.now()
+                val days = date.dayOfWeek.toString()
+
+                if(days=="SATURDAY"){
+                    if (biayaSec<1){
+                        biayaSec = 3000
+                    } else {
+                        biayaSec = biayaSec * 3000
+                    }
+                } else if(days=="SUNDAY"){
+                    if (biayaSec<1){
+                        biayaSec = 3000
+                    } else {
+                        biayaSec = biayaSec * 3000
+                    }
+                } else{
+                    if (biayaSec<1){
+                        biayaSec = 2000
+                    } else {
+                        biayaSec = biayaSec * 2000
+                    }
+                }
+
                 setTitle("Tagihan Parkir Anda")
-                setMessage("Rp. ???")
+                setMessage("Rp. ${biayaSec}")
                 setPositiveButton("Bayar") { _, _ ->
                     scanBarcodeExitViewModel.logout()
                     val intent = Intent(applicationContext, OpenOutActivity::class.java)

@@ -26,6 +26,7 @@ import com.dimas.sparkle.ViewModelFactory
 import com.dimas.sparkle.databinding.ActivityOpenInMainBinding
 import com.google.firebase.database.*
 import java.time.LocalDateTime
+import java.time.LocalTime
 
 class OpenInMainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -106,6 +107,23 @@ class OpenInMainActivity : AppCompatActivity(), View.OnClickListener {
                             builder.setPositiveButton("Lanjut"){p0,p1 ->
                                 val dbTmp = FirebaseDatabase.getInstance().getReference("tempatParkir")
                                 val date = LocalDateTime.now()
+                                var today = LocalTime.now()
+
+                                var hours = today.hour
+                                var minute = today.minute
+                                var sec = today.second
+
+                                val secHours = hours * 3600
+                                val secMinute = minute * 60
+
+                                val totalSec = secHours + secMinute + sec
+
+                                val jamPreferences = getSharedPreferences("jamPrefs", Context.MODE_PRIVATE)
+                                val jam = jamPreferences.edit()
+
+                                jam.apply {
+                                    putString("JAM_KEY", totalSec.toString())
+                                }.apply()
 
                                 val tmpId = day.push().key
 
@@ -125,11 +143,12 @@ class OpenInMainActivity : AppCompatActivity(), View.OnClickListener {
                                 dbTmp.child(tempatParkir.id!!).setValue(tempatParkir)
 
                                 val insertedText = tempatParkir.tempat
-                                val sharedPreferences = getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
-                                val editor = sharedPreferences.edit()
+
+                                val tempatPreferences = getSharedPreferences("tempatPrefs", Context.MODE_PRIVATE)
+                                val editor = tempatPreferences.edit()
 
                                 editor.apply {
-                                    putString("STRING_KEY", insertedText)
+                                    putString("TEMPAT_KEY", insertedText)
                                 }.apply()
                                 mainViewModel.login()
                                 startActivity(intent)

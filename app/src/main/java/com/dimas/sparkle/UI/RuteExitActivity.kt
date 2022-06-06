@@ -47,8 +47,8 @@ class RuteExitActivity : AppCompatActivity() {
             val dataPhoto = resources.obtainTypedArray(R.array.data_exit)
             val listrute = ArrayList<Nomor>()
             for (i in dataRute.indices) {
-                val sharedPreferences = getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
-                val savedString = sharedPreferences.getString("STRING_KEY", null)
+                val sharedPreferences = getSharedPreferences("tempatPrefs", Context.MODE_PRIVATE)
+                val savedString = sharedPreferences.getString("TEMPAT_KEY", null)
                 if (dataRute[i]==savedString){
                     val rute = Nomor(dataName[i],dataRute[i], dataPhoto.getResourceId(i, -1))
                     listrute.add(rute)

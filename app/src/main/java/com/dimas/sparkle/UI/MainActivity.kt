@@ -99,8 +99,8 @@ class MainActivity : AppCompatActivity() {
             val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
             val listRute = ArrayList<Nomor>()
             for (i in dataRute.indices) {
-                val sharedPreferences = getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
-                val savedString = sharedPreferences.getString("STRING_KEY", null)
+                val sharedPreferences = getSharedPreferences("tempatPrefs", Context.MODE_PRIVATE)
+                val savedString = sharedPreferences.getString("TEMPAT_KEY", null)
                 if (dataRute[i]==savedString){
                     val rute = Nomor(dataName[i],dataRute[i], dataPhoto.getResourceId(i, -1))
                     listRute.add(rute)

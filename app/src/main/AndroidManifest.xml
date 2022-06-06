@@ -25,9 +25,6 @@
             android:name=".UI.RuteParkirActivity"
             android:exported="false" />
         <activity
-            android:name=".UI.RuteExitOutActivity"
-            android:exported="false" />
-        <activity
             android:name=".UI.RuteExitActivity"
             android:exported="false" />
         <activity

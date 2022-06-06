@@ -55,8 +55,8 @@ class OpenOutActivity : AppCompatActivity(){
                     for(h in p0.children){
                         val tempatParkir = h.getValue(TempatParkir::class.java)
                         if (tempatParkir != null) {
-                            val sharedPreferences = getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
-                            val savedString = sharedPreferences.getString("STRING_KEY", null)
+                            val sharedPreferences = getSharedPreferences("tempatPrefs", Context.MODE_PRIVATE)
+                            val savedString = sharedPreferences.getString("TEMPAT_KEY", null)
                             if (tempatParkir.tempat== savedString){
                                 tmpList.add(tempatParkir)
                                 val builder = AlertDialog.Builder(this@OpenOutActivity)
@@ -104,8 +104,8 @@ class OpenOutActivity : AppCompatActivity(){
                     for(h in p0.children){
                         val tempatParkir = h.getValue(TempatParkir::class.java)
                         if (tempatParkir != null) {
-                            val sharedPreferences = getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
-                            val savedString = sharedPreferences.getString("STRING_KEY", null)
+                            val sharedPreferences = getSharedPreferences("tempatPrefs", Context.MODE_PRIVATE)
+                            val savedString = sharedPreferences.getString("TEMPAT_KEY", null)
                             if (tempatParkir.tempat == savedString){
                                 tmpList.add(tempatParkir)
                                 val builder = AlertDialog.Builder(this@OpenOutActivity)
