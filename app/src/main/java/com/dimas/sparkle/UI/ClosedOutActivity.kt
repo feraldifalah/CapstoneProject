@@ -14,7 +14,7 @@ class ClosedOutActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityClosedOutBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        supportActionBar?.title = resources.getString(R.string.area_parkir)
+        supportActionBar?.title = resources.getString(R.string.Scan_Barcode_Exit)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         binding.btnSave.setOnClickListener(this)
     }

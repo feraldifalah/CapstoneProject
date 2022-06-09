@@ -14,7 +14,7 @@ class ClosedInMainActivity : AppCompatActivity(){
         binding = ActivityClosedInMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportActionBar?.title = resources.getString(R.string.area_parkir)
+        supportActionBar?.title = resources.getString(R.string.Scan_Barcode)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         binding.btnSave.setOnClickListener{

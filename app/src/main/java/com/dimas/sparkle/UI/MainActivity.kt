@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.view.WindowInsets
 import android.view.WindowManager
 import android.widget.Toast
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
@@ -32,6 +33,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        installSplashScreen()
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -137,7 +141,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showSelectedRute(rute: Nomor) {
-        Toast.makeText(this, "Kamu dapat" + rute.name, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Kamu dapat Nomor " + rute.description, Toast.LENGTH_SHORT).show()
     }
 
     companion object {

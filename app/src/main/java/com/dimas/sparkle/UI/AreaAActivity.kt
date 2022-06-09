@@ -7,21 +7,21 @@ import android.os.Bundle
 import androidx.annotation.RequiresApi
 import com.dimas.sparkle.Model.TempatParkir
 import com.dimas.sparkle.R
-import com.dimas.sparkle.databinding.ActivityWelcomeBinding
+import com.dimas.sparkle.databinding.ActivityAreaAactivityBinding
 import com.google.firebase.database.*
 
-class WelcomeActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityWelcomeBinding
+class AreaAActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityAreaAactivityBinding
     private lateinit var ref : DatabaseReference
-    private lateinit var ref1 : DatabaseReference
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityWelcomeBinding.inflate(layoutInflater)
+        binding = ActivityAreaAactivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportActionBar?.title = resources.getString(R.string.Welcome)
+        supportActionBar?.title = resources.getString(R.string.area_a)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         ref = FirebaseDatabase.getInstance().getReference("tempatParkir")
         val addValueEventListener = ref.addValueEventListener(object : ValueEventListener {
@@ -38,7 +38,7 @@ class WelcomeActivity : AppCompatActivity() {
                             spacesATotal = spacesATotal +1
                         }
                     }
-                    binding.statusA.text = "Area A : ${spacesA.toString()} / ${spacesATotal.toString()} Kosong"
+                    binding.statusA.text = "Area A\n${spacesA.toString()} / ${spacesATotal.toString()}"
                 }
             }
 
@@ -46,32 +46,26 @@ class WelcomeActivity : AppCompatActivity() {
                 TODO("Not yet implemented")
             }
         })
-        ref1 = FirebaseDatabase.getInstance().getReference("ParkingSpaces")
-        val addValueEventListener1 = ref1.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(p0: DataSnapshot) {
-                if (p0.exists()) {
-                    for (h in p0.children) {
-                        val spaces = h.value
-                        binding.statusB.text = "Area B : ${spaces.toString()} / 69 Kosong"
-                    }
-                }
-            }
 
-            override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
-            }
+        binding.statusA.setOnClickListener {
+            val intent = Intent(applicationContext, ClosedInMainActivity::class.java)
+            startActivity(intent)
+        }
+        setupAction()
+    }
 
-
-        })
-
-        binding.BottonA.setOnClickListener {
-            val intent = Intent(applicationContext, AreaAActivity::class.java)
+    private fun setupAction() {
+        binding.barcodeButton.setOnClickListener {
+            val intent = Intent(applicationContext, ClosedInMainActivity::class.java)
             startActivity(intent)
         }
 
-        binding.BottonB.setOnClickListener {
-            val intent = Intent(applicationContext, AreaBActivity::class.java)
-            startActivity(intent)
+        binding.areaParkirButton.setOnClickListener {
+            startActivity(Intent(this, AreaParkirActivity::class.java))
+        }
+
+        binding.hariSibukButton.setOnClickListener {
+            startActivity(Intent(this, HariSibukActivity::class.java))
         }
     }
 }

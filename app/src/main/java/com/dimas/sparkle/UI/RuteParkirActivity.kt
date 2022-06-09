@@ -30,12 +30,8 @@ class RuteParkirActivity : AppCompatActivity() {
         supportActionBar?.title = resources.getString(R.string.rute_parkir)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        val nomor1 = intent.getStringExtra("nomor")
         binding.exitButton.setOnClickListener {
-            val bundle = Bundle()
             val intent = Intent(applicationContext, RuteExitActivity::class.java)
-            bundle.putString("nomor", nomor1)
-            intent.putExtras(bundle)
             startActivity(intent)
         }
     }
