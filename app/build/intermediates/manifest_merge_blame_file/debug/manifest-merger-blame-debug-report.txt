@@ -1,0 +1,213 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.dimas.sparkle"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:6:5-65
+12-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:6:22-62
+13
+14    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+15    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.firebase:firebase-database:20.0.5] C:\Users\Leppiana\.gradle\caches\transforms-3\09f0f2e708cdf4a2f64687ac7e0f99d8\transformed\jetified-firebase-database-20.0.5\AndroidManifest.xml:25:5-79
+16-->[com.google.firebase:firebase-database:20.0.5] C:\Users\Leppiana\.gradle\caches\transforms-3\09f0f2e708cdf4a2f64687ac7e0f99d8\transformed\jetified-firebase-database-20.0.5\AndroidManifest.xml:25:22-76
+17
+18    <application
+18-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:8:5-64:19
+19        android:allowBackup="true"
+19-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:9:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.7.0] C:\Users\Leppiana\.gradle\caches\transforms-3\f6f8a5ce6946a8c4991a757788b025bf\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+22-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:10:9-43
+23        android:label="@string/app_name"
+23-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:11:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:12:9-54
+25        android:supportsRtl="true"
+25-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:13:9-35
+26        android:testOnly="true"
+27        android:theme="@style/Theme.SPARKLE" >
+27-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:14:9-45
+28        <activity
+28-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:15:9-17:40
+29            android:name="com.dimas.sparkle.UI.AreaBActivity"
+29-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:16:13-45
+30            android:exported="false" />
+30-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:17:13-37
+31        <activity
+31-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:18:9-20:40
+32            android:name="com.dimas.sparkle.UI.AreaAActivity"
+32-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:19:13-45
+33            android:exported="false" />
+33-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:20:13-37
+34        <activity
+34-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:21:9-23:40
+35            android:name="com.dimas.sparkle.UI.WelcomeActivity"
+35-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:22:13-47
+36            android:exported="false" />
+36-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:23:13-37
+37        <activity
+37-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:24:9-26:40
+38            android:name="com.dimas.sparkle.UI.ScanBarcodeOpenActivity"
+38-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:25:13-55
+39            android:exported="false" />
+39-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:26:13-37
+40        <activity
+40-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:27:9-29:40
+41            android:name="com.dimas.sparkle.UI.ScanBarcodeExitActivity"
+41-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:28:13-55
+42            android:exported="false" />
+42-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:29:13-37
+43        <activity
+43-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:30:9-32:40
+44            android:name="com.dimas.sparkle.UI.RuteParkirActivity"
+44-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:31:13-50
+45            android:exported="false" />
+45-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:32:13-37
+46        <activity
+46-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:33:9-35:40
+47            android:name="com.dimas.sparkle.UI.RuteExitActivity"
+47-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:34:13-48
+48            android:exported="false" />
+48-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:35:13-37
+49        <activity
+49-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:36:9-38:40
+50            android:name="com.dimas.sparkle.UI.OpenOutActivity"
+50-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:37:13-47
+51            android:exported="false" />
+51-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:38:13-37
+52        <activity
+52-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:39:9-41:40
+53            android:name="com.dimas.sparkle.UI.OpenInMainActivity"
+53-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:40:13-50
+54            android:exported="false" />
+54-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:41:13-37
+55        <activity
+55-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:42:9-44:40
+56            android:name="com.dimas.sparkle.UI.HariSibukActivity"
+56-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:43:13-49
+57            android:exported="false" />
+57-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:44:13-37
+58        <activity
+58-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:45:9-47:40
+59            android:name="com.dimas.sparkle.UI.ClosedOutActivity"
+59-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:46:13-49
+60            android:exported="false" />
+60-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:47:13-37
+61        <activity
+61-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:48:9-50:40
+62            android:name="com.dimas.sparkle.UI.ClosedInMainActivity"
+62-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:49:13-52
+63            android:exported="false" />
+63-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:50:13-37
+64        <activity
+64-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:51:9-53:40
+65            android:name="com.dimas.sparkle.UI.AreaParkirActivity"
+65-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:52:13-50
+66            android:exported="false" />
+66-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:53:13-37
+67        <activity
+67-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:54:9-63:20
+68            android:name="com.dimas.sparkle.UI.MainActivity"
+68-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:55:13-44
+69            android:exported="true"
+69-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:56:13-36
+70            android:theme="@style/Theme.MySplash" >
+70-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:57:13-50
+71            <intent-filter>
+71-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:58:13-62:29
+72                <action android:name="android.intent.action.MAIN" />
+72-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:59:17-69
+72-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:59:25-66
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+74-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:61:17-77
+74-->C:\Users\Leppiana\Downloads\SPARKLE_Beta.8\SPARKLE\app\src\main\AndroidManifest.xml:61:27-74
+75            </intent-filter>
+76        </activity>
+77        <activity android:name="androidx.core.splashscreen.test.SplashScreenAppCompatTestActivity" />
+77-->[androidx.core:core-splashscreen:1.0.0-alpha01] C:\Users\Leppiana\.gradle\caches\transforms-3\d63a236d8c9335fdbb40c4605a7bb6e8\transformed\jetified-core-splashscreen-1.0.0-alpha01\AndroidManifest.xml:25:9-102
+77-->[androidx.core:core-splashscreen:1.0.0-alpha01] C:\Users\Leppiana\.gradle\caches\transforms-3\d63a236d8c9335fdbb40c4605a7bb6e8\transformed\jetified-core-splashscreen-1.0.0-alpha01\AndroidManifest.xml:25:19-99
+78
+79        <service
+79-->[com.google.firebase:firebase-database:20.0.5] C:\Users\Leppiana\.gradle\caches\transforms-3\09f0f2e708cdf4a2f64687ac7e0f99d8\transformed\jetified-firebase-database-20.0.5\AndroidManifest.xml:29:9-35:19
+80            android:name="com.google.firebase.components.ComponentDiscoveryService"
+80-->[com.google.firebase:firebase-database:20.0.5] C:\Users\Leppiana\.gradle\caches\transforms-3\09f0f2e708cdf4a2f64687ac7e0f99d8\transformed\jetified-firebase-database-20.0.5\AndroidManifest.xml:30:13-84
+81            android:directBootAware="true"
+81-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Leppiana\.gradle\caches\transforms-3\559c3ee926fafded3daae742be08db6d\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:35:13-43
+82            android:exported="false" >
+82-->[com.google.firebase:firebase-database:20.0.5] C:\Users\Leppiana\.gradle\caches\transforms-3\09f0f2e708cdf4a2f64687ac7e0f99d8\transformed\jetified-firebase-database-20.0.5\AndroidManifest.xml:31:13-37
+83            <meta-data
+83-->[com.google.firebase:firebase-database:20.0.5] C:\Users\Leppiana\.gradle\caches\transforms-3\09f0f2e708cdf4a2f64687ac7e0f99d8\transformed\jetified-firebase-database-20.0.5\AndroidManifest.xml:32:13-34:85
+84                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+84-->[com.google.firebase:firebase-database:20.0.5] C:\Users\Leppiana\.gradle\caches\transforms-3\09f0f2e708cdf4a2f64687ac7e0f99d8\transformed\jetified-firebase-database-20.0.5\AndroidManifest.xml:33:17-109
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.firebase:firebase-database:20.0.5] C:\Users\Leppiana\.gradle\caches\transforms-3\09f0f2e708cdf4a2f64687ac7e0f99d8\transformed\jetified-firebase-database-20.0.5\AndroidManifest.xml:34:17-82
+86        </service>
+87
+88        <activity
+88-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Leppiana\.gradle\caches\transforms-3\c92f5acff227ba65885a76a14a3c99c3\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+89            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+89-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Leppiana\.gradle\caches\transforms-3\c92f5acff227ba65885a76a14a3c99c3\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+90            android:exported="false"
+90-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Leppiana\.gradle\caches\transforms-3\c92f5acff227ba65885a76a14a3c99c3\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+91            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+91-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Leppiana\.gradle\caches\transforms-3\c92f5acff227ba65885a76a14a3c99c3\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+92
+93        <provider
+93-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Leppiana\.gradle\caches\transforms-3\559c3ee926fafded3daae742be08db6d\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:26:9-31:39
+94            android:name="com.google.firebase.provider.FirebaseInitProvider"
+94-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Leppiana\.gradle\caches\transforms-3\559c3ee926fafded3daae742be08db6d\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:27:13-77
+95            android:authorities="com.dimas.sparkle.firebaseinitprovider"
+95-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Leppiana\.gradle\caches\transforms-3\559c3ee926fafded3daae742be08db6d\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:28:13-72
+96            android:directBootAware="true"
+96-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Leppiana\.gradle\caches\transforms-3\559c3ee926fafded3daae742be08db6d\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:29:13-43
+97            android:exported="false"
+97-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Leppiana\.gradle\caches\transforms-3\559c3ee926fafded3daae742be08db6d\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:30:13-37
+98            android:initOrder="100" />
+98-->[com.google.firebase:firebase-common:20.1.1] C:\Users\Leppiana\.gradle\caches\transforms-3\559c3ee926fafded3daae742be08db6d\transformed\jetified-firebase-common-20.1.1\AndroidManifest.xml:31:13-36
+99
+100        <meta-data
+100-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Leppiana\.gradle\caches\transforms-3\11cb8e991765d03a7588377a18112636\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+101            android:name="com.google.android.gms.version"
+101-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Leppiana\.gradle\caches\transforms-3\11cb8e991765d03a7588377a18112636\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+102            android:value="@integer/google_play_services_version" />
+102-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Leppiana\.gradle\caches\transforms-3\11cb8e991765d03a7588377a18112636\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+103
+104        <provider
+104-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Leppiana\.gradle\caches\transforms-3\167e5dec2b8bd6b46b0b0ed320a19447\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+105            android:name="androidx.startup.InitializationProvider"
+105-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Leppiana\.gradle\caches\transforms-3\167e5dec2b8bd6b46b0b0ed320a19447\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+106            android:authorities="com.dimas.sparkle.androidx-startup"
+106-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Leppiana\.gradle\caches\transforms-3\167e5dec2b8bd6b46b0b0ed320a19447\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+107            android:exported="false" >
+107-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Leppiana\.gradle\caches\transforms-3\167e5dec2b8bd6b46b0b0ed320a19447\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+108            <meta-data
+108-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Leppiana\.gradle\caches\transforms-3\167e5dec2b8bd6b46b0b0ed320a19447\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+109                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+109-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Leppiana\.gradle\caches\transforms-3\167e5dec2b8bd6b46b0b0ed320a19447\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+110                android:value="androidx.startup" />
+110-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Leppiana\.gradle\caches\transforms-3\167e5dec2b8bd6b46b0b0ed320a19447\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+111            <meta-data
+111-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Leppiana\.gradle\caches\transforms-3\054dae4415aac79846614e69e4b2a796\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+112                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+112-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Leppiana\.gradle\caches\transforms-3\054dae4415aac79846614e69e4b2a796\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+113                android:value="androidx.startup" />
+113-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Leppiana\.gradle\caches\transforms-3\054dae4415aac79846614e69e4b2a796\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+114        </provider>
+115    </application>
+116
+117</manifest>

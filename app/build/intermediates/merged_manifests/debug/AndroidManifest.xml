@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dimas.sparkle"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="32" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.SPARKLE" >
+        <activity
+            android:name="com.dimas.sparkle.UI.AreaBActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dimas.sparkle.UI.AreaAActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dimas.sparkle.UI.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dimas.sparkle.UI.ScanBarcodeOpenActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dimas.sparkle.UI.ScanBarcodeExitActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dimas.sparkle.UI.RuteParkirActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dimas.sparkle.UI.RuteExitActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dimas.sparkle.UI.OpenOutActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dimas.sparkle.UI.OpenInMainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dimas.sparkle.UI.HariSibukActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dimas.sparkle.UI.ClosedOutActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dimas.sparkle.UI.ClosedInMainActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dimas.sparkle.UI.AreaParkirActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.dimas.sparkle.UI.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MySplash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="androidx.core.splashscreen.test.SplashScreenAppCompatTestActivity" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.dimas.sparkle.firebaseinitprovider"
+            android:directBootAware="true"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.dimas.sparkle.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+    </application>
+
+</manifest>
