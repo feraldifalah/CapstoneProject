@@ -9,6 +9,11 @@
     <string name="hari_sibuk">Hari Sibuk Minggu ini</string>
     <string name="nomor_parkir">Nomor Parkir</string>
     <string name="rute_parkir">Rute Parkir</string>
+    <string name="Scan_Barcode">Scan Barcode</string>
+    <string name="Scan_Barcode_Exit">Scan Barcode Keluar</string>
+    <string name="area_a">Area A</string>
+    <string name="area_b">Area B</string>
+    <string name="Welcome">Welcome</string>
 
     <string-array name="data_name">
         <item>Nomor</item>

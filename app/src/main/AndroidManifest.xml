@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SPARKLE">
         <activity
+            android:name=".UI.AreaBActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.AreaAActivity"
+            android:exported="false" />
+        <activity
             android:name=".UI.WelcomeActivity"
             android:exported="false" />
         <activity
@@ -47,7 +53,8 @@
             android:exported="false" />
         <activity
             android:name=".UI.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.MySplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

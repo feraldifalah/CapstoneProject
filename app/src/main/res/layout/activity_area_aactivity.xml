@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Ivory"
+    tools:context=".UI.AreaAActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/navi"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/barcodeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/statusA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/teal_900"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/Ivory"
+            android:textSize="56dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/barcodeButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/teal_900"
+        android:text="Buka Gerbang"
+        android:textColor="@color/light_brown"
+        app:layout_constraintBottom_toTopOf="@+id/areaParkirButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/areaParkirButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/teal_900"
+        android:text="@string/lihat_area_parkir"
+        android:textColor="@color/light_brown"
+        app:layout_constraintBottom_toTopOf="@+id/hariSibukButton"
+        app:layout_constraintEnd_toEndOf="@+id/barcodeButton"
+        app:layout_constraintStart_toStartOf="@+id/barcodeButton" />
+
+    <Button
+        android:id="@+id/hariSibukButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/teal_900"
+        android:text="@string/cek_hari_sibuk"
+        android:textColor="@color/light_brown"
+        app:layout_constraintBottom_toTopOf="@+id/bye"
+        app:layout_constraintEnd_toEndOf="@+id/areaParkirButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/areaParkirButton" />
+
+    <TextView
+        android:id="@+id/bye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="by SPARKLE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
