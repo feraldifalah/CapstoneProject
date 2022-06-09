@@ -88,6 +88,7 @@ id green4
 id green5
 id green6
 id green7
+id guideline2
 id guideline3
 id guideline4
 id guideline5
@@ -97,6 +98,7 @@ id hariSibukButton
 id imageMap
 id imageView
 id img_item_photo
+id item_click_support
 id mobil_eight
 id mobil_eleven
 id mobil_five
@@ -124,6 +126,7 @@ id red7
 id result
 id rv_rute
 id rv_rutes
+id splash_screen
 id statusA
 id statusB
 id textView
@@ -136,8 +139,11 @@ id tvSunday
 id tvThursday
 id tvTuesday
 id tvWednesday
+id tv_boolean
+id tv_edit
 id tv_item_description
 id tv_item_name
+id tv_tempat
 id yellow
 id yellow1
 id yellow2
@@ -156,11 +162,15 @@ layout activity_main
 layout activity_open_in_main
 layout activity_open_out
 layout activity_rute_exit
+layout activity_rute_exit_out
 layout activity_rute_parkir
 layout activity_scan_barcode_exit
 layout activity_scan_barcode_open
+layout activity_splash_screen
 layout activity_welcome
+layout item_mhs
 layout item_row_exit
+layout item_row_hero
 layout item_row_rute
 layout items_row_rutes
 layout update_dialog

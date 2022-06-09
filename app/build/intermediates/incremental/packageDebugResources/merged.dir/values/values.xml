@@ -79,6 +79,7 @@
     <color name="teal_900">#052D37</color>
     <color name="white">#FFFFFFFF</color>
     <color name="yellow">#E3D913</color>
+    <item name="item_click_support" type="id"/>
     <string name="Scan_Barcode">Scan Barcode</string>
     <string name="Scan_Barcode_Exit">Scan Barcode Keluar</string>
     <string name="Welcome">Welcome</string>
