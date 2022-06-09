@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kotlin.iml" filepath="$PROJECT_DIR$/.idea/modules/kotlin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/kotlin.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/kotlin.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/kotlin.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/kotlin.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/kotlin.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/kotlin.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/kotlin.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/kotlin.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SPARKLE.iml" filepath="$PROJECT_DIR$/.idea/modules/SPARKLE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SPARKLE.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SPARKLE.app.iml" />
     </modules>
   </component>
 </project>
