@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <integer-array name="data_exit">
+        <item>@drawable/exit_1</item>
+        <item>@drawable/exit_2</item>
+        <item>@drawable/exit_3</item>
+        <item>@drawable/exit_4</item>
+        <item>@drawable/exit_5</item>
+        <item>@drawable/exit_6</item>
+        <item>@drawable/exit_7</item>
+        <item>@drawable/exit_8</item>
+        <item>@drawable/exit_9</item>
+        <item>@drawable/exit_10</item>
+        <item>@drawable/exit_11</item>
+        <item>@drawable/exit_12</item>
+        <item>@drawable/exit_13</item>
+        <item>@drawable/exit_14</item>
+    </integer-array>
+    <string-array name="data_name">
+        <item>Nomor</item>
+        <item>Nomor</item>
+        <item>Nomor</item>
+        <item>Nomor</item>
+        <item>Nomor</item>
+        <item>Nomor</item>
+        <item>Nomor</item>
+        <item>Nomor</item>
+        <item>Nomor</item>
+        <item>Nomor</item>
+        <item>Nomor</item>
+        <item>Nomor</item>
+        <item>Nomor</item>
+        <item>Nomor</item>
+    </string-array>
+    <integer-array name="data_photo">
+        <item>@drawable/nomor_1</item>
+        <item>@drawable/nomor_2</item>
+        <item>@drawable/nomor_3</item>
+        <item>@drawable/nomor_4</item>
+        <item>@drawable/nomor_5</item>
+        <item>@drawable/nomor_6</item>
+        <item>@drawable/nomor_7</item>
+        <item>@drawable/nomor_8</item>
+        <item>@drawable/nomor_9</item>
+        <item>@drawable/nomor_10</item>
+        <item>@drawable/nomor_11</item>
+        <item>@drawable/nomor_12</item>
+        <item>@drawable/nomor_13</item>
+        <item>@drawable/nomor_14</item>
+    </integer-array>
+    <string-array name="data_rutes">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </string-array>
+    <color name="Ivory">#FDF6E4</color>
+    <color name="black">#FF000000</color>
+    <color name="green">#1CD542</color>
+    <color name="light_brown">#E5C58F</color>
+    <color name="navi">#2D3D4F</color>
+    <color name="orange">#E55C3E</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="red">#F44336</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="teal_900">#052D37</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#E3D913</color>
+    <string name="Scan_Barcode">Scan Barcode</string>
+    <string name="Scan_Barcode_Exit">Scan Barcode Keluar</string>
+    <string name="Welcome">Welcome</string>
+    <string name="app_name">SPARKLE</string>
+    <string name="area_a">Area A</string>
+    <string name="area_b">Area B</string>
+    <string name="area_parkir">Area Parkir</string>
+    <string name="cek_hari_sibuk">Cek Hari Sibuk</string>
+    <string name="default_web_client_id" translatable="false">612441472514-be38q51p55v1apudou2kiohn3vftssgo.apps.googleusercontent.com</string>
+    <string name="description">Description</string>
+    <string name="firebase_database_url" translatable="false">https://crudapp-86bdf-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">612441472514</string>
+    <string name="google_api_key" translatable="false">AIzaSyCGLcb_eszATU3OIOWNZzF0uYrdmIFK4AY</string>
+    <string name="google_app_id" translatable="false">1:612441472514:android:5cf33f2c851f4dc96e311b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCGLcb_eszATU3OIOWNZzF0uYrdmIFK4AY</string>
+    <string name="google_storage_bucket" translatable="false">crudapp-86bdf.appspot.com</string>
+    <string name="hari_sibuk">Hari Sibuk Minggu ini</string>
+    <string name="lihat_area_parkir">Lihat Area Parkir</string>
+    <string name="nomor_parkir">Nomor Parkir</string>
+    <string name="project_id" translatable="false">crudapp-86bdf</string>
+    <string name="rute_exit">Rute Exit</string>
+    <string name="rute_parkir">Rute Parkir</string>
+    <string name="tempat_parkir">Tempat Parkir</string>
+    <style name="Theme.MySplash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/teal_900</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/sparkle_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.SPARKLE</item>
+    </style>
+    <style name="Theme.SPARKLE" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/teal_900</item>
+        <item name="colorPrimaryVariant">@color/teal_900</item>
+        <item name="colorOnPrimary">@color/light_brown</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/light_brown</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
